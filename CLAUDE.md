@@ -88,9 +88,10 @@ agent-security-playbook/
 │   │   │   ├── dependency-auditor.md
 │   │   │   ├── api-security-reviewer.md
 │   │   │   └── security-team-lead.md
-│   │   └── skills/               # 9 code security skills
+│   │   └── skills/               # 10 code security skills
 │   │       ├── securability-engineering/
 │   │       ├── securability-engineering-review/
+│   │       ├── prd-securability-enhancement/
 │   │       ├── code-review-security/
 │   │       ├── sca-audit/
 │   │       ├── secrets-scan/
@@ -118,10 +119,9 @@ agent-security-playbook/
 │   └── tier5-governance/         # Maturity, compliance, reporting plays
 ├── data/                         # Machine-readable security reference data
 │   ├── opencre/                  # OpenCRE cross-standard mappings (CWE <-> ASVS <-> WSTG <-> NIST)
-│   ├── asvs/                     # ASVS JSON/CSV requirements
+│   ├── asvs/                     # ASVS v5.0 section files (80 files, Markdown + YAML frontmatter)
+│   ├── aisvs/                    # AISVS section files (Markdown + YAML frontmatter)
 │   ├── fiasse/                   # FIASSE v1.0.4 framework sections (SSEM attributes, principles, measurement)
-│   ├── wstg/                     # WSTG checklist JSON
-│   ├── samm/                     # SAMM YAML maturity model
 │   ├── llm-top10/                # Parsed LLM Top 10 data
 │   └── secure-code-prompts/      # IaC and secure coding prompt data
 ├── templates/
