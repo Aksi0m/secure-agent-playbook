@@ -83,12 +83,13 @@ agent-security-playbook/
 │   ├── code-security-skills/     # Code & infra security skills plugin
 │   │   ├── .claude-plugin/
 │   │   │   └── plugin.json
-│   │   ├── agents/               # 4 code-security agents
+│   │   ├── agents/               # 5 code-security agents
 │   │   │   ├── code-security-reviewer.md
 │   │   │   ├── dependency-auditor.md
 │   │   │   ├── api-security-reviewer.md
+│   │   │   ├── mobile-security-reviewer.md
 │   │   │   └── security-team-lead.md
-│   │   └── skills/               # 10 code security skills
+│   │   └── skills/               # 11 code security skills
 │   │       ├── securability-engineering/
 │   │       ├── securability-engineering-review/
 │   │       ├── prd-securability-enhancement/
@@ -97,6 +98,7 @@ agent-security-playbook/
 │   │       ├── secrets-scan/
 │   │       ├── api-security-review/
 │   │       ├── web-security-review/
+│   │       ├── mobile-code-review/
 │   │       ├── iac-security-review/
 │   │       └── security-guidance/
 │   └── ai-security-skills/       # AI/agent security skills plugin
@@ -121,6 +123,7 @@ agent-security-playbook/
 │   ├── opencre/                  # OpenCRE cross-standard mappings (CWE <-> ASVS <-> WSTG <-> NIST)
 │   ├── asvs/                     # ASVS v5.0 section files (80 files, Markdown + YAML frontmatter)
 │   ├── aisvs/                    # AISVS section files (Markdown + YAML frontmatter)
+│   ├── masvs/                    # MASVS v2.1.0 section files (33 files: 8 group overviews + 24 controls + README)
 │   ├── fiasse/                   # FIASSE v1.0.4 framework sections (SSEM attributes, principles, measurement)
 │   ├── llm-top10/                # Parsed LLM Top 10 data
 │   └── secure-code-prompts/      # IaC and secure coding prompt data
@@ -154,6 +157,7 @@ Plays reference these machine-readable OWASP datasets (populate `data/` as neede
 | Dataset | Source Repo | Format | Used By |
 |---------|-----------|--------|---------|
 | ASVS v5.0 | `eoftedal/owasp-agent-skills-project` — `references/ASVS/` | Markdown + YAML frontmatter | code-review-security (80 section files in `data/asvs/`) |
+| MASVS v2.1.0 | `OWASP/masvs` (tag `v2.1.0`, `controls/MASVS-*.md`) | MD → MD with frontmatter and enrichment preservation | mobile-code-review (24 control files + 8 group overviews in `data/masvs/`) |
 | FIASSE v1.0.4 | `OWASP/FIASSE` — `docs/securable_framework.md` (tag `v1.0.4`) | Markdown + YAML frontmatter | securability-engineering, securability-engineering-review, prd-securability-enhancement (61 section files in `data/fiasse/`) |
 | WSTG Checklist | `OWASP/wstg` — `checklists/` | JSON | wstg-checklist |
 | SAMM Model | `owaspsamm/core` — `model/` | YAML | samm-assess |
